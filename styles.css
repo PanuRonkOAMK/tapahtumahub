@@ -30,4 +30,59 @@ caption {
   text-align: left;
   font-weight: bold;
   margin-bottom: 0.25rem;
+  font-size: 1.2rem;
+}
+:root {
+ --color-text: #1f2937;
+ --color-accent: #0ea5e9; /* tapahtumateema */
+ --space: 1rem;
+}
+html { 
+  font-size: 16px; 
+}
+body {
+ font-family: system-ui, sans-serif;
+ line-height: 1.5;
+ color: var(--color-text);
+ margin: 0;
+}
+.container { 
+  max-width: 68ch; 
+  margin: 0 
+  auto; 
+  padding: var(--space); 
+}
+.title { 
+  color: #333; 
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+.title.strong { 
+  color: var(--color-accent); 
+}
+
+a {
+  text-decoration: underline;
+}
+a:hover,
+a:focus {
+  text-decoration: none;
+  outline: 2px solid var(--color-accent);
+}
+.box {
+  padding: var(--space);
+  border: 2px solid #ccc;
+  margin: var(--space);
+}
+thead {
+  background-color: #f7fafc;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f1f5f9;
+}
+form {
+  padding: var(--space);
+  border: 2px solid #ccc;
+  margin: var(--space);
 }
