@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ilmoittautuminen</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Ilmoittautuminen</h1>
+    <nav aria-label="Päävalikko">
+        <ul>
+            <li><a href="index.html">Etusivu</a></li>
+            <li><a href="tapahtumat.html">Tapahtumat</a></li>
+            <li><a href="ilmoittaudu.html">Ilmoittautuminen</a></li>
+            <li><a href="galleria.html">Galleria</a></li>
+            <li><a href="yhteystiedot.html">Yhteystiedot</a></li>
+        </ul>
+    </nav>
+  </header>
+  <main>
+    <!-- TODO: Sisältö etusivulle -->
+      <form action="#" method="post">
+        <label for="name">Nimi:</label>
+        <input type="text" id="name" name="name"><br>
+        <label for="email">Sähköposti</label>
+        <input id="email" name="email" type="email" required><br>
+        <!-- <label for="tapahtumat">Tapahtuma:</label>
+        <input type="text" id="tapahtumat" name="tapahtumat"><br> -->
+        <input type="radio" id="kirjasto" name="tapahtuma" value="Keskustakirjasto">
+        <label for="kirjasto">Keskustakirjasto</label><br>
+        <input type="radio" id="Lautapeli" name="tapahtuma" value="Lautapeli">
+        <label for="lautapeli">Lautapeli</label><br>
+        <input type="radio" id="liikunta" name="tapahtuma" value="Liikuntapuisto">
+        <label for="liikunta">Liikuntapuisto</label><br>
+        <label for="lisatiedot">Lisätiedot:</label>
+        <input type="textarea" id="lisatiedot" name="lisatiedot"><br>
+        <button type="submit">Lähetä</button>
+      </form>
+  </main>
+  <footer>
+    <!-- TODO: Footer-sisältö -->
+        By Panu Ronkainen
+  </footer>
+</body>
+</html>
